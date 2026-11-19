@@ -39,6 +39,14 @@
   .gallery figure:nth-child(even){transform:rotate(1deg)}
   .gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block;border:3px solid var(--ink)}
   .gallery figcaption{font-size:14px;font-weight:800;color:var(--ink);margin-top:8px;text-align:center}
+  .servicios{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:16px}
+  .servicio{background:var(--card);border:4px solid var(--ink);border-radius:16px;padding:18px;box-shadow:6px 6px 0 var(--ink);text-align:center}
+  .servicio:nth-child(odd){transform:rotate(-.5deg)}
+  .servicio:nth-child(even){transform:rotate(.5deg)}
+  .servicio h3{margin:0 0 14px;font-size:18px;text-transform:uppercase;font-weight:900;letter-spacing:.02em}
+  .btn-wa{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:900;text-transform:uppercase;
+    font-size:15px;border:3px solid var(--ink);border-radius:12px;padding:11px 16px;box-shadow:4px 4px 0 var(--ink)}
+  .btn-wa:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
   ul{padding-left:20px;line-height:1.7;font-weight:600}
 </style>
 </head>
@@ -76,6 +84,18 @@
       </ul>
     </section>
   </div>
+  <section class="card" style="margin-top:18px">
+    <h2>Nuestros servicios</h2>
+    <p>Estos son los servicios que ofrecemos en CDMX y Estado de México. Toca el botón del servicio que necesitas para cotizarlo por WhatsApp.</p>
+    <div class="servicios">
+      <div class="servicio"><h3>Pintura</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20pintura">Cotizar por WhatsApp</a></div>
+      <div class="servicio"><h3>Electricidad</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20electricidad">Cotizar por WhatsApp</a></div>
+      <div class="servicio"><h3>Impermeabilizaciones</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20una%20impermeabilizaci%C3%B3n">Cotizar por WhatsApp</a></div>
+      <div class="servicio"><h3>Murales</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20un%20mural">Cotizar por WhatsApp</a></div>
+      <div class="servicio"><h3>Lavado y sanitizado de cisternas y tinacos</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20lavado%20y%20sanitizado%20de%20cisterna%20o%20tinaco">Cotizar por WhatsApp</a></div>
+      <div class="servicio"><h3>Plomería</h3><a class="btn-wa" href="https://wa.me/525618408345?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20plomer%C3%ADa">Cotizar por WhatsApp</a></div>
+    </div>
+  </section>
   <section class="card" style="margin-top:18px">
     <h2>Fotos de trabajos</h2>
     <p>Algunos de nuestros trabajos de impermeabilización en azoteas y losas.</p>
